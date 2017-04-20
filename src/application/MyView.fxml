@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="575.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TabPane prefHeight="575.0" prefWidth="724.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="String Hash">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="buttonCalculate" layoutX="532.0" layoutY="360.0" mnemonicParsing="false" onAction="#operationOnString" prefHeight="25.0" prefWidth="153.0" text="Calculate Hash Value" textAlignment="CENTER" />
+                        <TextField fx:id="hashCalculated" layoutX="14.0" layoutY="360.0" prefHeight="25.0" prefWidth="491.0" />
+                        <TextArea fx:id="stringToHash" layoutX="14.0" layoutY="40.0" prefHeight="252.0" prefWidth="695.0" />
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="660.0" text="Please Type in some text which Hash value will be calculated" />
+                        <Label layoutX="14.0" layoutY="303.0" prefHeight="17.0" prefWidth="604.0" text="Please Chose The Algorithm to be used for hashing the Text" />
+                        <TextField fx:id="hashToCompare" layoutX="16.0" layoutY="425.0" prefHeight="25.0" prefWidth="488.0" />
+                        <Button fx:id="buttonCompare" layoutX="532.0" layoutY="423.0" mnemonicParsing="false" onAction="#operationOnString" prefHeight="25.0" prefWidth="155.0" text="Compare Hash Values" textAlignment="CENTER" />
+                        <Label layoutX="14.0" layoutY="397.0" prefHeight="17.0" prefWidth="604.0" text="Type in a Hash value to be compared with the above calculated hash value" />
+                        <Label layoutX="16.0" layoutY="461.0" prefHeight="17.0" prefWidth="503.0" text="Result of the comparision" />
+                        <Label fx:id="result" layoutX="16.0" layoutY="479.0" prefHeight="52.0" prefWidth="617.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <ComboBox fx:id="combobox" layoutX="16.0" layoutY="326.0" prefHeight="25.0" prefWidth="185.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+          <Tab text="File Hash">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="browse" layoutX="564.0" layoutY="35.0" mnemonicParsing="false" onAction="#operationOnFile" prefHeight="25.0" prefWidth="146.0" text="Browse" />
+                        <TextField fx:id="filePath" layoutX="14.0" layoutY="35.0" prefHeight="25.0" prefWidth="534.0" />
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="611.0" text="Please select a file which hash value will be calculated" />
+                        <Label layoutX="14.0" layoutY="68.0" prefHeight="17.0" prefWidth="605.0" text="Please Select the Hash Algorith to be used" />
+                        <TextField fx:id="hashCalculated2" layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="537.0" />
+                        <Button fx:id="buttonCalculate2" layoutX="562.0" layoutY="124.0" mnemonicParsing="false" onAction="#operationOnFile" prefHeight="25.0" prefWidth="149.0" text="Calculate Hash Value" />
+                        <Label layoutX="14.0" layoutY="185.0" prefHeight="17.0" prefWidth="656.0" text="Type in a Hash value to be compared with the above calculated hash value" />
+                        <TextField fx:id="hashToCompare2" layoutX="14.0" layoutY="209.0" prefHeight="25.0" prefWidth="534.0" />
+                        <Button fx:id="buttonCompare2" layoutX="564.0" layoutY="209.0" mnemonicParsing="false" onAction="#operationOnFile" prefHeight="25.0" prefWidth="146.0" text="Compare" />
+                        <Label layoutX="14.0" layoutY="265.0" prefHeight="17.0" prefWidth="534.0" text="Search the above calculated Hash value in the database of known infected files" />
+                        <Button fx:id="search" layoutX="564.0" layoutY="261.0" mnemonicParsing="false" onAction="#operationOnFile" prefHeight="25.0" prefWidth="148.0" text="Search in Database" />
+                        <TextArea fx:id="textArea" layoutX="14.0" layoutY="299.0" prefHeight="236.0" prefWidth="698.0" />
+                        <ComboBox fx:id="combobox2" layoutX="14.0" layoutY="85.0" prefHeight="25.0" prefWidth="231.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
