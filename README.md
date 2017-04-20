@@ -59,4 +59,4 @@ for example
 You can copy the .jar file on an other computer (windows for example and run the programm just by double clicking on the jar file).
 
 #### NB: Due to restriction of the size of files hosted on git Hub for a free account, the database of virus (folder ressources of the project) used for the tool have been considarably reduced fo it to be uploaded on git hub.
-The files (main.mdb and vx.txt) can be downloaded from the fillowing link and can be replaced with the actual ones in the resource folder before compiling the project
+The files (main.mdb and vx.txt) can be downloaded from the fillowing link (https://www.dropbox.com/sh/zligpw5ue8ngke9/AAB5tA1k8nknAoJDFPf-Soqma?dl=0 ) and can be replaced with the actual ones in the resource folder before compiling the project
